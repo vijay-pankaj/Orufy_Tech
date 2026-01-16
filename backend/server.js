@@ -13,10 +13,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(fileUpload({
   useTempFiles: true
 }));
-app.use(cors({
-  origin: "https://orufy-tech-kd7e.onrender.com",
-  credentials: true
-}));
+// app.use(cors({
+//   origin: "https://orufy-tech-kd7e.onrender.com",
+//   credentials: true
+// }));
 app.use(cors());
 
 app.use('/products',productrouter)
